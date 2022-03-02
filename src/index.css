@@ -1,0 +1,13 @@
+:root {
+  --primary-orange: #FF7D1A;
+  --primary-pale-orange: #FFEDE0;
+  --neutral-very-dark-blue: #1D2025;
+  --neutral-dark-grayish-blue: #68707D;
+  --neutral-grayish-blue: #B6BCC8;
+  --neutral-light-grayish-blue: #F7F8FD;
+  --neutral-white: #FFFFFF;
+  --neutral-black: #000000;
+  --neutral-black-focus: #BFBFBF;
+  --font-weight-400: 400;
+  --font-weight-700: 700;
+}
