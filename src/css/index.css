@@ -11,8 +11,6 @@
   --neutral-white: #FFFFFF;
   --neutral-black: #000000;
   --neutral-black-focus: #BFBFBF;
-  /* --font-weight-400: 400;
-  --font-weight-700: 700; */
 }
 
 *{
@@ -23,5 +21,12 @@
 
 body {
   font-family: 'Roboto', 'sans-serif';
+}
+
+@media (min-width: 1440px) {
+  body {
+    width: 85%;
+    margin: auto;
+  }
 }
 

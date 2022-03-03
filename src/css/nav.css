@@ -1,20 +1,32 @@
 /* nav */
 nav { 
-  padding: 20px 20px;
+  margin: 10px 5px 0 5px;
+  padding-bottom: 10px;
+  border-style: none none solid none;
+  border-color: var(--neutral-black-focus);
+  border-width: 0.5px;
 }
 
 ul { 
   list-style-type: none;
 }
 
-a { 
+li { 
   color: var(--neutral-dark-grayish-blue);
   text-decoration: none; 
 }
 
-a:hover { 
-  /* text-decoration: underline; */
+li:hover { 
   color: var(--primary-orange);
+}
+
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
 }
 
 .menu li { 
@@ -23,27 +35,34 @@ a:hover {
   white-space: nowrap; 
 }
 
-.toggle a { 
-  /* font-size: 20px;  */
-}
-
-.button.secondary { 
-  /* border-bottom: 1px #444 solid;  */
-}
-
 .menu {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  column-gap: 10px;
 }
 
 .toggle { 
+  order: 0; 
+  /* text-align: right;  */
+  padding: 0 10px 0 20px;
+}
+
+.logo{
   /* order: 1;  */
+  flex: 1; 
 }
 
 .item.button { 
   order: 2; 
+  display: block;
+  width: auto;
+  margin-right: 10px;
+}
+
+li:last-child { 
+  margin-right: 20px;
 }
 
 .item { 
@@ -57,33 +76,43 @@ a:hover {
   display: block; 
 }
 
+.avatar-img{
+  width: 30px;
+}
+
 /* nav queries */
-@media all and (min-width: 600px) {
-  .menu { 
-    justify-content: center;
-  }
-
-  .logo { 
-    flex: 1; 
-  }
-
+@media (min-width: 1440px) {
   .toggle { 
-    /* flex: 1; */
-    text-align: right; 
+    display: none; 
+  }
+
+  .menu{
+    display: grid;
+    grid-template-columns: 200px repeat(5, 100px) repeat(2, 70px);
+    grid-auto-columns: 50px;
+    align-items: center;
+    align-content: center; 
+    justify-content: start; 
+  }
+
+  .item { 
+    display: grid;
   }
 
   .item.button { 
-    width: auto; 
-    /* order: 1;  */
-    display: block; 
+    margin: 0;
+    order: 3;
   }
 
-  .toggle { 
-    /* order: 2;  */
-  } 
+  .cart-btn {
+    grid-column: 12 / 13;
+  }
 
+  .avatar-btn {
+    grid-column: 13 / 14;
+  }
 
-}
-
-@media (min-width: 1440px) {
+  .avatar-img {
+    width: 40px;
+  }
 }
