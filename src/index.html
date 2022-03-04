@@ -28,29 +28,96 @@
   </nav>
 
   <!-- carousel -->
-  <aside class="carousel">
-    <section class="container-carousel">
-      <ul class="slider">
-        <li class="item-slider" id="slide1"><img class="img-item-slider" src="./assets/images/image-product-1.jpg" alt="sneakers 1"></li>
-        <li class="item-slider" id="slide2"><img class="img-item-slider" src="./assets/images/image-product-2.jpg" alt="sneakers 2"></li>
-        <li class="item-slider" id="slide3"><img class="img-item-slider" src="./assets/images/image-product-3.jpg" alt="sneakers 3"></li>
-        <li class="item-slider" id="slide4"><img class="img-item-slider" src="./assets/images/image-product-4.jpg" alt="sneakers 4"></li>
-      </ul>
-      <div class="btn-controlers">
-        <button class="btn directions"><img src="./assets/icons/icon-previous.svg" alt="controlers"></button>
-        <button class="btn directions"><img src="./assets/icons/icon-next.svg" alt="controlers"></button>
-      </div>
-    </section>
+  <section class="carousel" aria-label="Gallery">
+    <ul class="carousel__viewport">
+      <li id="carousel__slide1"
+          tabindex="0"
+          class="carousel__slide">
+        <div class="carousel__snapper">
+          <a href="#carousel__slide4"
+             class="carousel__prev">
+             <img src="./assets/icons/icon-previous.svg" alt="controlers">
+          </a>
+            <img class="img-item-slider" src="./assets/images/image-product-1.jpg" alt="sneakers 1">
+          <a href="#carousel__slide2"
+             class="carousel__next">
+             <img src="./assets/icons/icon-next.svg" alt="controlers">
+          </a>
+        </div>
+      </li>
+      <li id="carousel__slide2"
+          tabindex="0"
+          class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide1"
+            class="carousel__prev">
+            <img src="./assets/icons/icon-previous.svg" alt="controlers">
+          </a>
+            <img class="img-item-slider" src="./assets/images/image-product-2.jpg" alt="sneakers 2">
+          <a href="#carousel__slide3"
+            class="carousel__next">
+            <img src="./assets/icons/icon-next.svg" alt="controlers">
+          </a>
+      </li>
+      <li id="carousel__slide3"
+          tabindex="0"
+          class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide2"
+            class="carousel__prev">
+            <img src="./assets/icons/icon-previous.svg" alt="controlers">
+          </a>
+            <img class="img-item-slider" src="./assets/images/image-product-3.jpg" alt="sneakers 3">
+          <a href="#carousel__slide4"
+            class="carousel__next">
+            <img src="./assets/icons/icon-next.svg" alt="controlers">
+          </a>
+      </li>
+      <li id="carousel__slide4"
+          tabindex="0"
+          class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide3"
+            class="carousel__prev">
+            <img src="./assets/icons/icon-previous.svg" alt="controlers">
+          </a>
+            <img class="img-item-slider" src="./assets/images/image-product-4.jpg" alt="sneakers 4">
+          <a href="#carousel__slide1"
+            class="carousel__next">
+            <img src="./assets/icons/icon-next.svg" alt="controlers">
+          </a>
+      </li>
+    </ul>
 
-    <section class="controlers">
-      <ul class="controlers-container">
-        <li class="item-controlers"><a href="#slide1"><img class="img-item-controlers" src="./assets/images/image-product-1-thumbnail.jpg" alt="sneakers 1"></a></li>
-        <li class="item-controlers"><a href="#slide2"><img class="img-item-controlers" src="./assets/images/image-product-2-thumbnail.jpg" alt="sneakers 2"></a></li>
-        <li class="item-controlers"><a href="#slide3"><img class="img-item-controlers" src="./assets/images/image-product-3-thumbnail.jpg" alt="sneakers 3"></a></li>
-        <li class="item-controlers"><a href="#slide4"><img class="img-item-controlers" src="./assets/images/image-product-4-thumbnail.jpg" alt="sneakers 4"></a></li>
+    <aside class="carousel__navigation">
+      <ul class="carousel__navigation-list">
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide1"
+             class="carousel__navigation-button">
+             <img class="img-item-controlers" src="./assets/images/image-product-1-thumbnail.jpg" alt="sneakers 1">
+          </a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide2"
+             class="carousel__navigation-button">
+             <img class="img-item-controlers" src="./assets/images/image-product-2-thumbnail.jpg" alt="sneakers 2">
+          </a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide3"
+             class="carousel__navigation-button">
+             <img class="img-item-controlers" src="./assets/images/image-product-3-thumbnail.jpg" alt="sneakers 3">
+          </a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide4"
+             class="carousel__navigation-button">
+             <img class="img-item-controlers" src="./assets/images/image-product-4-thumbnail.jpg" alt="sneakers 4">
+          </a>
+        </li>
       </ul>
-    </section>
-</aside>
+    </aside>
+  </section>
 
   <script src="./index.js" type="module"></script>
 </body>

@@ -94,6 +94,10 @@ nav {
     justify-content: start; 
   }
 
+  .menu li {
+    font-weight: 700;
+  }
+
   .item { 
     display: grid;
     text-align: center;
