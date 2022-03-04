@@ -7,20 +7,16 @@ nav {
   border-width: 0.5px;
 }
 
-ul { 
-  list-style-type: none;
-}
-
-li { 
+.list { 
   color: var(--neutral-black);
   text-decoration: none; 
 }
 
-li:hover { 
+/* li:hover { 
   color: var(--primary-orange);
-}
+} */
 
-button {
+.btn {
   background: none;
   border: 0;
   color: inherit;
@@ -36,6 +32,7 @@ button {
 }
 
 .menu {
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -49,7 +46,6 @@ button {
 }
 
 .logo{
-  /* order: 1;  */
   flex: 1; 
 }
 
@@ -58,10 +54,6 @@ button {
   display: block;
   width: auto;
   margin-right: 10px;
-}
-
-li:last-child { 
-  margin-right: 20px;
 }
 
 .item { 
@@ -75,13 +67,17 @@ li:last-child {
   display: block; 
 }
 
+.avatar-btn {
+  margin-right: 20px;
+}
+
 .avatar-img{
   width: 30px;
 }
 
 /* nav queries */
 @media (min-width: 1440px) {
-  li { 
+  .list { 
     color: var(--neutral-dark-grayish-blue);
   }
 

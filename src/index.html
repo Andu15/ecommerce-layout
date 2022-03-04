@@ -15,18 +15,42 @@
   <!-- Navbar -->
   <nav>
     <ul class="menu">
-      <li class="toggle"><button id="btn-toggle"><img src="./assets/icons/icon-menu.svg" alt="logo"></li>
-      <li class="logo"><img src="./assets/icons/logo.svg" alt="logo"></li>
-      <li class="item floating">Collections</li>
-      <li class="item floating">Men</li>
-      <li class="item floating">Women</li>
-      <li class="item floating">About</li>
-      <li class="item floating">Contact</li>
-      <li class="item button cart-btn" id="cart-btn"><button><img src="./assets/icons/icon-cart.svg" alt="logo"></button></li>
-      <li class="item button avatar-btn"><button><img class="avatar-img" src="./assets/images/image-avatar.png" alt="logo"></button></li>
+      <li class="toggle list"><button class="btn" id="btn-toggle"><img src="./assets/icons/icon-menu.svg" alt="menu"></li>
+      <li class="logo list"><img src="./assets/icons/logo.svg" alt="logo"></li>
+      <li class="item list">Collections</li>
+      <li class="item list">Men</li>
+      <li class="item list">Women</li>
+      <li class="item list">About</li>
+      <li class="item list">Contact</li>
+      <li class="item list button cart-btn" id="cart-btn"><button class="btn"><img src="./assets/icons/icon-cart.svg" alt="logo"></button></li>
+      <li class="item list button avatar-btn"><button class="btn"><img class="avatar-img" src="./assets/images/image-avatar.png" alt="avatar"></button></li>
     </ul>
   </nav>
 
+  <!-- carousel -->
+  <aside class="carousel">
+    <section class="container-carousel">
+      <ul class="slider">
+        <li class="item-slider" id="slide1"><img class="img-item-slider" src="./assets/images/image-product-1.jpg" alt="sneakers 1"></li>
+        <li class="item-slider" id="slide2"><img class="img-item-slider" src="./assets/images/image-product-2.jpg" alt="sneakers 2"></li>
+        <li class="item-slider" id="slide3"><img class="img-item-slider" src="./assets/images/image-product-3.jpg" alt="sneakers 3"></li>
+        <li class="item-slider" id="slide4"><img class="img-item-slider" src="./assets/images/image-product-4.jpg" alt="sneakers 4"></li>
+      </ul>
+      <div class="btn-controlers">
+        <button class="btn directions"><img src="./assets/icons/icon-previous.svg" alt="controlers"></button>
+        <button class="btn directions"><img src="./assets/icons/icon-next.svg" alt="controlers"></button>
+      </div>
+    </section>
+
+    <section class="controlers">
+      <ul class="controlers-container">
+        <li class="item-controlers"><a href="#slide1"><img class="img-item-controlers" src="./assets/images/image-product-1-thumbnail.jpg" alt="sneakers 1"></a></li>
+        <li class="item-controlers"><a href="#slide2"><img class="img-item-controlers" src="./assets/images/image-product-2-thumbnail.jpg" alt="sneakers 2"></a></li>
+        <li class="item-controlers"><a href="#slide3"><img class="img-item-controlers" src="./assets/images/image-product-3-thumbnail.jpg" alt="sneakers 3"></a></li>
+        <li class="item-controlers"><a href="#slide4"><img class="img-item-controlers" src="./assets/images/image-product-4-thumbnail.jpg" alt="sneakers 4"></a></li>
+      </ul>
+    </section>
+</aside>
 
   <script src="./index.js" type="module"></script>
 </body>

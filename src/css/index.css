@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import './nav.css';
+@import './carousel.css';
 
 :root {
   --primary-orange: #FF7D1A;
@@ -19,8 +20,13 @@
   margin: 0;
 }
 
-body {
+body, html {
   font-family: 'Roboto', 'sans-serif';
+  /* padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden; */
 }
 
 @media (min-width: 1440px) {
