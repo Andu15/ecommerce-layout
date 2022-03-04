@@ -7,6 +7,7 @@ ul,li {
 .carousel {
   position: relative;
   filter: drop-shadow(0 0 10px #0003);
+  min-height: 18em;
 }
 
 .carousel__viewport {
@@ -87,17 +88,89 @@ ul,li {
 }
 
 
-
-
 /* MEDIA QUERIES */
+@media (min-width: 320px) {
+  .carousel {
+    min-height: 20em;
+  }
+}
+
+@media (min-width: 360px) {
+  .carousel {
+    min-height: 24em;
+  }
+}
+
+@media (min-width: 430px) {
+  .carousel {
+    min-height: 29em;
+  }
+}
+
+@media (min-width: 510px) {
+  .carousel {
+    min-height: 35em;
+  }
+}
+
+@media (min-width: 600px) {
+  .carousel {
+    min-height: 42em;
+  }
+}
+
+@media (min-width: 710px) {
+  .carousel {
+    min-height: 47em;
+  }
+}
+
+@media (min-width: 795px) {
+  .carousel {
+    min-height: 53em;
+  }
+}
+
+@media (min-width: 893px) {
+  .carousel {
+    min-height: 60em;
+  }
+}
+
+@media (min-width: 1010px) {
+  .carousel {
+    min-height: 67em;
+  }
+}
+
+@media (min-width: 1120px) {
+  .carousel {
+    min-height: 75em;
+  }
+}
+
+@media (min-width: 1244px) {
+  .carousel {
+    min-height: 83em;
+  }
+}
+
+@media (min-width: 1355px) {
+  .carousel {
+    min-height: 88em;
+  }
+}
+
+
+/* laptop */
 @media (min-width: 1440px) {
   .carousel__prev, .carousel__next {
     display: none;
   }
 
   .carousel {
-    margin: 30px 50px;
     width: 50%;
+    min-height: 0;
   }
 
   .carousel__viewport {

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import './nav.css';
 @import './carousel.css';
+@import './informative.css';
 
 :root {
   --primary-orange: #FF7D1A;
@@ -54,6 +55,11 @@ body, html {
   body {
     width: 85%;
     margin: auto;
+  }
+
+  main {
+    width: 80vw;
+    margin: 20px auto;
   }
 }
 
