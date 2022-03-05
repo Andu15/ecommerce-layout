@@ -2,6 +2,8 @@
 @import './nav.css';
 @import './carousel.css';
 @import './informative.css';
+@import './modal.css';
+@import './purchase.css';
 
 :root {
   --primary-orange: #FF7D1A;

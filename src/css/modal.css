@@ -1,0 +1,43 @@
+.modal {
+  position:fixed;
+  top: 0px;
+  right:0;
+  bottom:0;
+  left:0; 
+  height: 400px;
+}
+
+.hidden-modal {
+  display: none; 
+}
+
+.modal-content {
+  position: absolute;
+  background-color: var(--neutral-white);
+  width: 90%;
+  border-radius: 10px;
+  top: 25%;
+  left: 5%;
+  min-height: 250px;
+  box-shadow: 0 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-title {
+  padding: 5%;
+  border-style: none none solid none;
+  border-width: 4px;
+  border-color: var(--neutral-light-grayish-blue);
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.purchase-summary {
+  padding: 5%;
+}
+
+@media (min-width: 1440px) {
+  .modal-content {
+    width: 30%;
+    left: 60%;
+  }
+}
