@@ -1,1 +1,14 @@
-{}
+{
+  "name": "maquetado-de-ecommerce",
+  "version": "1.0.0",
+  "main": "src/index.html",
+  "scripts": {
+    "htmlhint": "htmlhint src/*.html test/*.html",
+    "eslint": "eslint --ext .js src/ test/",
+    "pretest": "npm run eslint && npm run htmlhint",
+    "test": "jest --verbose --coverage",
+    "open-coverage-report": "opener ./coverage/lcov-report/index.html",
+    "start": "serve ./src",
+    "deploy": "gh-pages -d src"
+  }
+}
